@@ -1,0 +1,162 @@
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 0;
+}
+
+.info .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 2em;
+  width: 50%;
+}
+
+.info .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 17px;
+  margin: 0 10%;
+  width: 50%;
+}
+
+.info .about .question {
+  font-weight: bold;
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  height: 50%;
+}
+
+.team .user .photo-job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .user .photo-job img {
+  border-radius: 5px;
+  height: 13em;
+  width: 100%;
+}
+
+.team .user .photo-job .job {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.team .user .name {
+  bottom: 1em;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.team .user:nth-child(even) {
+  margin: 1.5em 0;
+}
+
+.team .user:nth-child(even) img {
+  background: -webkit-gradient(linear, left top, right top, from(#d6d6d6), to(#eee7ed));
+  background: linear-gradient(90deg, #d6d6d6, #eee7ed);
+}
+
+.team .user:nth-child(odd) img {
+  background: -webkit-gradient(linear, left top, right top, from(#eee7ed), to(#d6d6d6));
+  background: linear-gradient(90deg, #eee7ed, #d6d6d6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: #eeeeee;
+}
+
+.content {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .content .info {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .info .title,
+  .content .info .about {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+  .content .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content .team .user {
+    width: 30%;
+    margin: 8%;
+  }
+  .content .team .user:nth-child(even) {
+    padding-top: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .user {
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+    width: 30%;
+  }
+  .user .photo-job img {
+    height: 8em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

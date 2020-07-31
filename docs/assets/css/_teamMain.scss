@@ -1,0 +1,40 @@
+.team {
+	display: flex;
+	flex-wrap: wrap;
+
+	.user {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        width: 33%;
+        height: 50%;
+		.photo-job {
+			display: flex;
+			img {
+				border-radius: 5px;
+				height: 13em;
+				width: 100%;
+			}
+			.job {
+				writing-mode: vertical-rl;
+			}
+		}
+		.name {
+			// position: relative;
+			bottom: 1em;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		&:nth-child(even) {
+			margin: 1.5em 0;
+			img {
+                background: linear-gradient(90deg,  #d6d6d6, #eee7ed);
+            }
+		}
+		&:nth-child(odd) {
+        img{
+            background: linear-gradient(90deg,  #eee7ed, #d6d6d6);;
+        }
+        }
+	}
+}
